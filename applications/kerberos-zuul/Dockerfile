@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk8 AS EXPLODED
-COPY target/kerberos-zuul-1.0-SNAPSHOT.jar /app.jar
+COPY target/spring-cloud-kerberos-zuul-1.0-SNAPSHOT.jar /app.jar
 RUN mkdir /app && cd app && jar xf /app.jar
 
 FROM adoptopenjdk/openjdk8
