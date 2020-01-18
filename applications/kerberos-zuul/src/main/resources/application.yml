@@ -1,3 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-kerkeros-zuul
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        monitoring-secrets: true
+
 service:
   url: ${SERVICE_ENDPOINT:http://localhost:9090}
   path: ${SERVICE_PATH:/some-service}
