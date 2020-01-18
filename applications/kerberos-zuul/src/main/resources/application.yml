@@ -12,3 +12,8 @@ zuul:
 gateway:
   service-principal: ${SERVICE_PRINCIPAL:HTTP/localhost}
   keytab-location: ${KEYTAB_LOCATION:/tmp/minikdc/example.keytab}
+
+  
+dekorate:
+  kubernetes:
+    serviceType: "LoadBalancer"
